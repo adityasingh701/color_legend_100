@@ -14,7 +14,7 @@ parseInt(localStorage.getItem("coins")) || 200;
 let bestTime =
 parseInt(localStorage.getItem("bestTime")) || 0;
 
-let lives = 3;
+let lives = 5;
 
 let oddIndex = 0;
 
@@ -242,7 +242,7 @@ function startTimer(){
 }
 
 // ===============================
-// LEVEL SETTINGS
+// LEVEL SETTINGS BY ADITYA 
 // ===============================
 
 function getGridSize(level){
