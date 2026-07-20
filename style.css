@@ -1,0 +1,301 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+    text-align:center;
+}
+
+/* ===========================
+   TOP BAR
+=========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px;
+    background:#181818;
+    position:sticky;
+    top:0;
+    z-index:100;
+    font-size:14px;
+    font-weight:bold;
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+.page{
+    padding:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+    margin-top:30px;
+    color:#b06cff;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.btn{
+
+    width:100%;
+    max-width:320px;
+
+    padding:14px;
+
+    margin:8px auto;
+
+    display:block;
+
+    background:#7e22ce;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:16px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.btn:hover{
+
+    opacity:.9;
+
+}
+
+/* ===========================
+   BACK BUTTON
+=========================== */
+
+.back-btn{
+
+    background:#333;
+
+    margin-bottom:18px;
+
+}
+
+.back-btn:hover{
+
+    background:#555;
+
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+#grid{
+
+    display:grid;
+
+    gap:4px;
+
+    justify-content:center;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   COLOR BOX
+=========================== */
+
+.box{
+
+    width:100%;
+
+    max-width:50px;
+
+    aspect-ratio:1/1;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.box:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   LEVEL PAGE
+=========================== */
+
+.level-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+.level-btn{
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#222;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+.level-btn.unlocked{
+
+    background:#7e22ce;
+
+}
+
+.level-btn.locked{
+
+    opacity:.3;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.card{
+
+    background:#1a1a1a;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin-top:20px;
+
+}
+
+/* ===========================
+   INPUT
+=========================== */
+
+input{
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   TROPHY
+=========================== */
+
+.trophy{
+
+    font-size:80px;
+
+    margin-top:40px;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    color:#b06cff;
+
+    text-decoration:none;
+
+}
+
+a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:600px){
+
+    .topbar{
+
+        font-size:12px;
+
+        padding:10px;
+
+    }
+
+    .logo{
+
+        font-size:28px;
+
+    }
+
+    .btn{
+
+        font-size:15px;
+
+    }
+
+    .level-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
